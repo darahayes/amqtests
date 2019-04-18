@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  amq:
+    image: registry.access.redhat.com/amq-broker-7/amq-broker-72-openshift:1.2
+    ports:
+      - "8161:8161" # jolokia
+      - "5672:5672" # AMQP
+      - "1883:1883" # MQTT
+      - "61613:61613" # STOMP
+      - "61616:61616" # ARTEMIS
+    environment:
+      AMQ_USER: user
+      AMQ_PASSWORD: password
+      AMQ_ROLE: admin
+      AMQ_NAME: broker
+      AMQ_TRANSPORTS: openwire,amqp,stomp,mqtt,hornetq
