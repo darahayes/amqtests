@@ -19,12 +19,18 @@ You must have the following software on your machine.
 docker-compose up
 ```
 
+## Install the required dependencies
+
+```bash
+$ npm install
+```
+
 ## Run the Example Scriot
 
 The example script uses the `rhea` module to connect to the broker and send a message.
 
 ```bash
-$ node index.js 
+$ node index.js
 Hello World!
 ```
 
@@ -33,4 +39,3 @@ Hello World!
 With this set up. You can now attempt to run the examples from the `rhea` github repo which are pretty useful.
 
 https://github.com/amqp/rhea#examples
-
