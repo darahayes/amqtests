@@ -1,3 +1,4 @@
+##index page of the project
 var container = require('rhea');
 container.on('connection_open', function (context) {
     context.connection.open_receiver('examples');
